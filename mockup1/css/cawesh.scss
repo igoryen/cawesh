@@ -1,0 +1,118 @@
+// @import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+// @import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+
+body {
+  background-color:#556;
+  // background-size: 80px 140px;
+  // background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;  
+  
+}
+
+.goodbye-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;  
+  background:rgba(255,255,255, 0.8);
+}
+
+#goodbye-modal {
+ 
+}
+
+
+.goodbye-modal {
+
+
+
+    box-sizing: border-box;
+    height: 500px;
+    left: 50%;
+    margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0;  
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 800px;
+    z-index: 200;
+
+
+
+    h1 {    
+        color: #443266;
+    }
+    p {
+        color: #8C489F;
+    }
+
+ 
+    display: block;  /* This way it could be display flex or grid or whatever also. */
+
+
+
+    
+  
+  /* Use this for centering if unknown width/height */
+  transform: translate(-50%, -50%);
+  
+  /* If known, negative margins are probably better (less chance of blurry text). */
+  /* margin: -200px 0 0 -200px; */
+  
+  // background: white;
+  box-shadow: 10px 10px 60px 20px rgba(0, 0, 0, 0.4);
+}
+/* .closed {
+  display: none;
+} */
+
+
+.modal-guts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 50px 20px 20px;
+  background: #ededf7;
+  // font-family: 'Prompt', sans-serif;
+  // font-family: 'Bad Script', cursive;
+  font-family: 'Kalam', cursive;
+  font-size: 1.5em;
+  border-radius: 0px 10px 0px 0px;
+  
+  p {
+    margin: 0 0 10px 0;
+  }
+  h1 {
+    margin: 0 0 20px 0;
+  }
+  
+  
+}
+
+
+
+
+
+#flourish {
+    background-image: url(../images-cawesh/floral.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 382px auto;
+    padding: .6em;
+
+    // -webkit-filter: saturate(3); filter: saturate(3);
+    
+    -webkit-filter: opacity(70%); filter: opacity(70%);
+
+    // -webkit-filter: hue-rotate(180deg); filter: hue-rotate(180deg);
+
+    -webkit-filter: url(#linear);
+    filter:  url(#linear);
+}
